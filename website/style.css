@@ -1,0 +1,194 @@
+body {
+    background: #f3f3f3;
+    font-family: "Poppins", sans-serif;
+}
+
+/* IDs */
+#app {
+    display: grid;
+    grid-auto-rows: minmax(150px, auto);
+    background: #f3f3f3;
+    color: #fff;
+    justify-content: center;
+    grid-gap: 1em;
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+}
+
+#info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #1f1f1f;
+    max-width: 1250px;
+    max-height: 460px;
+    border-radius: 10px;
+    padding: 0 40px 40px 40px;
+}
+
+#entryHolder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#error {
+}
+
+#name {
+    color: #01c38d;
+    font-size: 22px;
+    margin: 0px 0 10px 0;
+}
+
+#date {
+    font-size: 16px;
+    margin: 10px 0 10px 0;
+}
+
+#temp {
+    font-size: 16px;
+    margin: 10px 0 10px 0;
+}
+
+#content {
+    font-size: 16px;
+    margin: 40px 0 10px 0;
+}
+
+#zip {
+    margin: 10px 0 20px 0;
+}
+
+/* Tags */
+/*  Basic Styling To Override Default For Basic HTML Elements */
+label {
+    display: block;
+    margin: 0px 0 10px 0;
+}
+
+input {
+    display: block;
+    height: 40px;
+    width: 400px;
+    background: #343434;
+    color: #f3f3f3;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    border: none;
+    border-radius: 8px;
+}
+
+button {
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 50px;
+    background: #01c38d;
+    color: #fff;
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    border: none;
+    border-radius: 8px;
+    margin: 10px 0 10px 0;
+}
+
+button:hover {
+    cursor: pointer;
+    background: #343434;
+    -webkit-box-shadow: 0 0 10px 5px rgba(1, 195, 141, 0.55);
+    -moz-box-shadow: 0 0 10px 5px rgba(1, 195, 141, 0.55);
+    box-shadow: 0 0 10px 5px rgba(1, 195, 141, 0.55);
+}
+
+h1 {
+    font-size: 36px;
+}
+
+textarea {
+    background: #343434;
+    color: #f3f3f3;
+    font-size: 16px;
+    font-family: 'Oswald', sans-serif;
+    border-radius: 8px;
+}
+
+/* Classes */
+.centered {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.title {
+    color: #01c38d;
+    font-size: 26px;
+    margin: 0 0 20px 0;
+}
+
+.myInput {
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0 10px 0;
+}
+
+.holder-zip {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.holder-feel {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    /*margin: 20px 0 0 20px;*/
+}
+
+.holder-entry {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #1f1f1f;
+    min-height: 200px;
+    border-radius: 10px;
+}
+
+/* Reset style for HTML element on active to have no border*/
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+/* Style for Placeholder Text*/
+::placeholder { /* Firefox, Chrome, Opera */
+    color: #01c38d;
+    font-family: "Poppins", sans-serif;
+
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #01c38d;
+    font-family: "Poppins", sans-serif;
+
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: #01c38d;
+    font-family: "Poppins", sans-serif;
+
+}
+
+@media (max-height: 750px) {
+    #info {
+        padding: 0 30px 5px 30px;
+    }
+}
