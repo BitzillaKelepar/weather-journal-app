@@ -10,7 +10,7 @@ let newDate = d.toDateString();
 // OpenWeatherMap API Call
 const _APICall = "https://api.openweathermap.org/data/2.5/weather?zip={zip code}&appid={API key}";
 const baseURL = "https://api.openweathermap.org/data/2.5/weather?zip=";
-const apiKey = "&appid=6908d48d7a7da9bd5a6401a046bc7c44&units=imperial";
+const apiKey = "&appid={API key}&units=imperial";
 
 generate.addEventListener("click", updateInfo);
 
